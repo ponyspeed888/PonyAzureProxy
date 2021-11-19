@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "DevHelper Page";
+}
+
+@ViewBag.Message 
+
+<a asp-action="CreateSampleData">CreateSampleData</a><br/>
+<a asp-action="ClearW3CLogs">ClearW3CLogs</a><br/>
+
+
+<br/>
+
+@if (ViewBag.logFiles != null)
+{
+    
+
+
+    @foreach(var f in ViewBag.logFiles)
+    {
+        <a asp-action="ViewLog" asp-route-fileName="@f" >View Log @f</a><br/>
+    
+
+}
+
+
+}
+
+<br/>
+<br/>
+<br/>
+
+@Html.Raw( @ViewBag.log )
+
