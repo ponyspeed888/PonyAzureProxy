@@ -6,3 +6,5 @@ Azure WebApp
 To try out, Set the environment (application, for Azure) variable YARPFORWARD_PREFIX to the url you want to proxy to.
 If YARPFORWARD_PREFIX is not set or is whitespace only, then no proxy occured
 Please note you may have to disable caching for you browser
+
+![Visitor Count](https://profile-counter.glitch.me/{YOUR USER}/count.svg)
